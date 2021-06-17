@@ -1,8 +1,26 @@
+import { Flex,  Button, Stack, FormLabel, FormControl } from '@chakra-ui/react';
+import Input from '../components/Form/Input';
 
-export default function Home() {
+export default function SignIn() {
   return (
-    <h1>
-      Olá, mundo!
-    </h1>
-  )
+    <Flex w="100vw" h="100vh" align="center" justify="center">
+      <Flex
+        as="form"
+        width="100%"
+        maxWidth={360}
+        bg="gray.800"
+        p="8"
+        borderRadius="8"
+        flexDir="column"
+      >
+        <Stack spacing="4">
+          <Input name="email" label="E-mail" type="email" placeholder="Digite o e-mail"  />
+          <Input name="password" label="Senha" type="password" placeholder="Digite a senha"  />
+        </Stack>
+        <Button type="submit" mt="6" size="lg" colorScheme="pink">
+          Entrar
+        </Button>
+      </Flex>
+    </Flex>
+  );
 }
