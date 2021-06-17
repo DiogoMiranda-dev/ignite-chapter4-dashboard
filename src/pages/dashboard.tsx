@@ -45,13 +45,13 @@ const options = {
     ],
   },
   fill: {
-      opacity: 0.3,
-      type: 'gradient',
-      gradient: {
-          shade: 'dark',
-          opacityFrom: 0.7,
-          opacityTo: 0.3,
-      }
+    opacity: 0.3,
+    type: 'gradient',
+    gradient: {
+      shade: 'dark',
+      opacityFrom: 0.7,
+      opacityTo: 0.3,
+    },
   },
 };
 
